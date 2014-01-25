@@ -1,92 +1,63 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Multiselection : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Multiselection</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ashramwen/MultiSelection">View on GitHub</a>
-
-          <h1 id="project_title">Multiselection</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ashramwen/MultiSelection/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/ashramwen/MultiSelection/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>&lt;!DOCTYPE html&gt;
-
-        </p>
-                test<div>
-                        <h2>
-<a name="-index" class="anchor" href="#-index"><span class="octicon octicon-link"></span></a> Index</h2>
-                        <div>
-                                <div>
-                                        Selection
-                                </div>
-                                <div>
-                                        <div>
-                                                <div>
-                                                        
-                                                        ALL</div>
-                                                <div>
-                                                        
-                                                        Green</div>
-                                                <div>
-                                                        
-                                                        Red</div>
-                                                <div>
-                                                        
-                                                        Blue</div>
-                                                <div>
-                                                        
-                                                        Orange</div>
-                                                <div>
-                                                        
-                                                        Purple</div>
-                                                <div>
-                                                        
-                                                        Black</div>
-                                                <div>
-                                                        
-                                                        White</div>
-                                        </div>
-                                        <div>
-                                                </div>
-                                </div>
-                        </div>
-                </div>
-        
-
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Multiselection maintained by <a href="https://github.com/ashramwen">ashramwen</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<html lang="zh">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="Styles/Selection.css" rel="stylesheet"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.multiselection.js"></script>
+		<title>test</title>
+	</head>
+	<body>
+		<div class="rightcolumn">
+			<h2> Index</h2>
+			<script type="text/javascript">
+				$(function() {
+					$('#Date').multiselect({
+						YesClick : yesClick
+					});
+				});
+				function yesClick() {
+					var a = 1;
+				}
+			</script>
+			<div class="custom-select" id="Date">
+				<div class="text-select">
+					Selection
+				</div>
+				<div class="drop-select">
+					<div class="list-select">
+						<div class="option-div">
+							<input name="Date_option[]" class="all-select" type="checkbox" checked="checked" value="0">
+							ALL</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="1">
+							Green</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="2">
+							Red</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="3">
+							Blue</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="4">
+							Orange</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="5">
+							Purple</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="6">
+							Black</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="7">
+							White</div>
+					</div>
+					<div class="button-select">
+						<input class="yes-select" type="button" value="YES">
+						<input class="no-select" type="button" value="NO">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

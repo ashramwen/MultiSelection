@@ -1,0 +1,58 @@
+﻿/*
+ jquery multiselection Style:
+ */
+div.text-select {
+    background-color: white;
+    background-image: url("../Images/downarrow_normal.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: 1px solid #CCCCCC;
+    color: Black;
+    font-size: 12px;
+    height: 18px;
+    overflow: visible;
+    padding: 0px 0px 0px 5px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 84px;
+}
+div.text-select:hover {
+    background-image: url("../Images/downarrow_hover.gif");
+    cursor: pointer;
+}
+div.drop-select {
+    border: 1px solid #CCCCCC;
+    width: 124px;
+    overflow: auto;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: White;
+}
+div.drop-select div {
+    text-align: left;
+}
+div.list-select {
+    max-height: 200px;
+    overflow: auto;
+}
+div.option-div {
+    white-space: nowrap;
+}
+div.option-div:hover {
+    /*color: #ffffff;*/
+    background-color: #f5f5f5;
+}
+div.button-select input {
+    width: 60px;
+    font-size: 13px;
+    margin-right: 0px;
+    padding: 1px 6px 1px 6px;
+}
+input.yes-select {
+    float: left;
+}
+input.no-select {
+    float: right;
+}
