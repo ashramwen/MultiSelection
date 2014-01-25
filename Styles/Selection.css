@@ -3,7 +3,7 @@
  */
 div.text-select {
     background-color: white;
-    background-image: url("../Images/downarrow_normal.gif");
+    background-image: url("../images/downarrow_normal.gif");
     background-position: right center;
     background-repeat: no-repeat;
     border: 1px solid #CCCCCC;
@@ -18,7 +18,7 @@ div.text-select {
     width: 84px;
 }
 div.text-select:hover {
-    background-image: url("../Images/downarrow_hover.gif");
+    background-image: url("../images/downarrow_hover.gif");
     cursor: pointer;
 }
 div.drop-select {
