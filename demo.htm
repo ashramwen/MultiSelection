@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<link href="Styles/Selection.css" rel="stylesheet"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="Scripts/jquery.multiselection.js"></script>
+		<title>test</title>
+	</head>
+	<body>
+		<div class="rightcolumn">
+			<h2> Index</h2>
+			<script type="text/javascript">
+				$(function() {
+					$('#Date').multiselect({
+						YesClick : yesClick
+					});
+				});
+				function yesClick() {
+					var a = 1;
+				}
+			</script>
+			<div class="custom-select" id="Date">
+				<div class="text-select">
+					Selection
+				</div>
+				<div class="drop-select">
+					<div class="list-select">
+						<div class="option-div">
+							<input name="Date_option[]" class="all-select" type="checkbox" checked="checked" value="0">
+							ALL</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="1">
+							Green</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="2">
+							Red</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="3">
+							Blue</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="4">
+							Orange</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="5">
+							Purple</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="6">
+							Black</div>
+						<div class="option-div">
+							<input name="Date_option[]" class="option-select" type="checkbox" checked="checked" value="7">
+							White</div>
+					</div>
+					<div class="button-select">
+						<input class="yes-select" type="button" value="YES">
+						<input class="no-select" type="button" value="NO">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

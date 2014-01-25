@@ -1,0 +1,27 @@
+@model AcerCloudBackWeb.Areas.report.Models.SelectionModel
+<div id='@Model.ID' class="custom-select">
+    <div class="text-select">
+        Selection
+    </div>
+    <div class="drop-select">
+        <div class="list-select">
+            <div class="option-div">
+                <input type="checkbox" name="@(Model.ID)[]" class="all-select" value="0" checked="checked" />ALL</div>
+            @foreach (var row in Model.Selection)
+            {
+                <div class="option-div">
+                    <input type="checkbox" name="@(Model.ID)[]" class="option-select" value="@row.Key" checked="checked" />@row.Value</div>
+            }
+        </div>
+        <div class="button-select">
+            <input type="button" class="yes-select" value="YES" />
+            <input type="button" class="no-select" value="NO" />
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#@Model.ID').multiselect({ YesClick: yesClick });
+    function yesClick() {
+        $("#form1").submit();
+    }
+</script>
